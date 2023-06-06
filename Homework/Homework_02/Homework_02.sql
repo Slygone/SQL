@@ -22,7 +22,7 @@ WHERE DateOfBirth > '01.01.1999'
 --Find all Students with LastName starting With ‘J’ enrolled in January/1998
 SELECT FirstName, LastName, EnrolledDate
 FROM Student
-WHERE LastName like 'J%' and EnrolledDate > '1998-01-31'
+WHERE LastName LIKE 'J%' AND EnrolledDate >= '01.01.1998' and EnrolledDate <= '01.31.1998'
 --List all Students ordered by FirstName
 SELECT FirstName
 FROM Student

@@ -37,3 +37,4 @@ FROM Grade g
 INNER JOIN Student s ON g.StudentID = s.ID
 GROUP BY g.StudentID, s.FirstName, s.LastName
 HAVING MAX(g.Grade) = AVG(g.Grade);
+
